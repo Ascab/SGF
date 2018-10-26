@@ -8,7 +8,7 @@ sgf: Sources/cmd.o Sources/io.o Sources/main.o Sources/my_string.o Sources/manip
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)
 clean: 
-	rm -rf *.o
+	rm -f Sources/*.o
 mrproper: clean
-	rm -rf sgf
+	rm -f sgf
 	
